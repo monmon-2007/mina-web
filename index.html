@@ -25,7 +25,7 @@
 
    google.maps.event.addDomListener(window, 'load', initialize);
    </script>
-<link rel="icon" type="image/png" href="images/favicon.ico" />
+
 </head>
 
 
@@ -133,8 +133,8 @@ a:hover
 	-webkit-border-radius: 150px;
 	-webkit-transform: scale(.8);
 	-moz-border-radius: 150px;
-	background: url("images/mg.jpg") no-repeat;
-	background-position:48% 82%;
+	background: url("images/minafile.jpg") no-repeat;
+	background-position:45% 39%;
 	text-align:center;
 	}
 
@@ -361,7 +361,26 @@ div.socialMediaBar
 	word-spacing: 300px;
 
 }
-
+.scrollToTop
+{
+	width:100px;
+	height:130px;
+	padding:10px;
+	text-align:center;
+	background: whiteSmoke;
+	font-weight: bold;
+	color: #444;
+	text-decoration: none;
+	position:fixed;
+	top:550px;
+	right:40px;
+	display:none;
+	background: url('up.png') no-repeat 0px 20px;
+}
+.scrollToTop:hover
+{
+	text-decoration:none;
+}
 
 
 </style>
@@ -372,12 +391,12 @@ div.socialMediaBar
 <body>
 	<div id='cssmenu'>
 	<ul>
-	   <li><a href='#C5'><span>Home</span></a></li>
-	   <li><a href='#'><span>about Me</span></a></li>
+	   <li><a href='#'><span>Home</span></a></li>
+	   <li><a href='#C1'><span>about Me</span></a></li>
 	   <li><a href='#C2'><span>Projects</span></a></li>
-	   <li><a href='#'><span>Research</span></a></li>
-	   <li><a href='C:\Users\support.tech\Desktop\minagadallah3.github.io\resume\Mina Junior-1.pdf'><span>Resume</span></a></li>
-	   <li><a href='#'><span>Contact</span></a></li>
+	   <li><a href='#C3'><span>Research</span></a></li>
+	   <li><a href='resume\Mina Junior-1.pdf'><span>Resume</span></a></li>
+	   <li><a href='#C4'><span>Contact</span></a></li>
 	</ul>
 	</div>
 
@@ -390,7 +409,7 @@ div.socialMediaBar
 
 
 <div id="aboutme">
-	<h1>[About Me]</h1>
+	<h1 id="C1">About Me</h1>
 	<div class="circular"></div>
 	<h2>Hey, They Call Me Mina!</h2>
 	<p>Computer Science is not just a major, but it's something that I enjoy doing.
@@ -443,36 +462,34 @@ and networking is the next technical revolution.</p>
 
 
 <div id="projects">
-
-	<h1>[Projects]<h1>
-
+	<h1 id="C2">Projects<h1>
 	<h2>Here are some of my most recent Projects<h2>
 
 <div class="center">
 	<div class="img">
 	  <a target="_blank" href="https://github.com/monmon-2007/blocky">
-	    <img src="E:\Mina Web\images\a1.png" alt="Trolltunga Norway" width="300" height="200">
+	    <img src="images\a1.png" alt="Trolltunga Norway" width="300" height="200">
 	  </a>
 	  <div class="desc">Blocky: Bitcoin wallet android app for easy accsess, send and recieve.</div>
 	</div>
 
 	<div class="img">
 	  <a target="_blank" href="https://github.com/monmon-2007/JSeal">
-	    <img src="E:\Mina Web\images\a2.bmp" alt="Forest" width="300" height="200">
+	    <img src="images\a2.bmp" alt="Forest" width="300" height="200">
 	  </a>
 	  <div class="desc">JSeal:Steganography application that allows a user to encode data into an existing image file.</div>
 	</div>
 
 	<div class="img">
 	  <a target="_blank" href="https://github.com/monmon-2007/Blitzfeed">
-	    <img src="E:\Mina Web\images\a3.png" alt="Northern Lights" width="300" height="200">
+	    <img src="images/a3.PNG" alt="Northern Lights" width="300" height="200">
 	  </a>
 	  <div class="desc">BlitzFeed: Web learning application that helps to improve your reading skills in any language</div>
 	</div>
 
 	<div class="img">
 	  <a target="_blank" href="https://github.com/monmon-2007/JSeal">
-	    <img src="E:\Mina Web\images\a4.jpg" alt="Mountains" width="300" height="200">
+	    <img src="images\a4.jpg" alt="Mountains" width="300" height="200">
 	  </a>
 	  <div class="desc">Multithreaded Bank system: simulation of a bank system client and server wrtien in c and runs on linux</div>
 	</div>
@@ -492,11 +509,10 @@ and networking is the next technical revolution.</p>
 
 	 </div><img src="C:\Users\mina\Documents\GitHub\mina-web\images\hackru.png" alt="tcnj" width="100" height="100"></div>
 
-
 </div>
 
 <div id="research">
-	<h1>[Research]<h1>
+	<h1 id="C3">Research<h1>
 	<h2>DriveAI:<h2>
 	<p> DriveAI is a 501(c)(3) nonprofit organization dedicated
 	to the research and development of autonomous vehicles. We're bringing the
@@ -510,14 +526,13 @@ and networking is the next technical revolution.</p>
 
 <div class="center">
 	<div class="img2">
-	    <img src="images/a1.png" alt="Trolltunga Norway" width="200" height="200">
+	    <img src="images\driveai.png" alt="Trolltunga Norway" width="200" height="200">
 	 </div></div>
-	 <h1>Helllllllo</h1>
 </div>
 
 
 <div id="contact">
-	<h1>[Contact]</h1>
+	<h1 id="C4">Contact</h1>
 	<div class="background">
 		<h3>Where You Will Find Me!<h3>
 		<BR>&nbsp;<BR>
@@ -551,3 +566,4 @@ and networking is the next technical revolution.</p>
 
 </div>
 </div>
+<a href="#" class="scrollToTop"><img src="images/up.png"></a>
